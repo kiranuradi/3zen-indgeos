@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nope</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Ysabeau+Infant:wght@500&display=swap" rel="stylesheet">  
+    <style>
+        *{
+            padding: 0;
+            margin: 0;   
+            font-family: 'Ysabeau Infant', sans-serif;
+        }
+        .big{
+            
+            width:100vw;
+            background-color: #03111c;
+            padding-bottom: 10%;
+        }
+        .firstdiv{  
+            display: flex;
+        }
+        .seconddiv{
+            display: flex;
+            text-decoration: none;
+            background-color: #03111c;
+        }
+        #logo:hover{
+            color: aqua;
+        }
+        .navbar {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         background-color: black;
+         padding: 10px;
+         position: sticky;
+         top: 0%;
+        z-index: 1;
+        /* height: 100vh; */
+        }
+        .navbar-icon {
+          color: #fff;
+          font-size: 24px;
+          cursor: pointer;
+        }
+
+        .navbar-icon .icon-bar.fa {
+          display: block;
+          width: 20px;
+          height: 2px;
+          background-color: #fff;
+          margin-bottom: 4px;
+          margin-left: 250px;
+        }
+        
+        .navbar-menu {
+          display: flex;
+          list-style: none;
+          padding: 2%;
+          width:800px;
+        }
+
+        .navbar-menu li {
+          margin-right: 20px;
+        }
+        
+        .navbar-menu li a {
+          color: #fff;
+          text-decoration: none;
+          margin-left: 50px;
+          text-align: center;
+        }
+        .logo{
+            font-size: 40px;
+            color: white;
+            padding: 3%;
+            margin-left: 22px;
+          }
+
+        .buttons{
+           margin-top: 30px;
+           display: flex;
+           width: 100%;
+           color: white;
+           padding-left: 30%;
+        }
+        .topheader a{
+            text-decoration: none;
+            color: white;
+        }
+        .topheader{
+           padding: 4% 5%;
+           font-size: 17px;
+        }
+        .topheader:hover{
+            cursor: pointer;
+            color: aqua;
+        }
+        #Indgeos{
+            color: #ff640a;
+            font-size: 50px;
+            font-weight: bold;
+            padding: 5% 8% ;
+        }
+        #sentance{
+            color: white;
+            margin-top: 5px; 
+            padding-left: 8%;
+            padding-top: 2px;
+            font-size: 17px;
+        }
+        #button1{
+            height: 50px;
+            width:200px;
+            margin-left: 63px;
+            margin-top: 70px;
+            border-color: #ff640a;
+            background: none;
+            color: white;
+            font-size: 17px;
+        }
+        #button1:hover{
+            border-color: aqua;
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+        #button1 a{
+            text-decoration: none;
+            color: white;
+        }
+        .images{
+           width: 25%; 
+           display: flex;
+        }
+        .gis{
+            margin-top: 30px;
+            margin-left: 100px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border:1px solid white ; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .gis:hover{
+            transform: scale(1.2);
+            transition: 0.8s;
+            border-color: rgb(161, 80, 22);
+        
+        }
+        .secondpage{
+            background-color: #03111c;
+            width: 100vw;
+        }
+        .sfirst{
+            text-align: center;
+            font-size: 40px;
+            color: #ff640a;
+            padding-bottom: 10px;
+            padding: 5%;
+            padding-top: 10%;
+        }
+        .ssecond{
+            width: 100%;
+            display: flex;
+        }
+        #h1{
+          font-size: 30px;
+          font-weight: bold;
+          color: white;
+          padding: 3%;
+          display: block;
+          width: 30%;
+          padding-top: 100px;
+        }
+        #num1{
+           font-size: 100px;
+           padding: 25%
+        }
+        .num{
+            display:flex;
+            width: 100%;
+            background-color: #ff640a;
+            margin-right: 20px;
+            text-align: center;
+            color: white;
+            margin-top: 100px;
+        }
+        #sthird{
+            width: 100%;
+            display: flex;
+        }
+        .sthird{
+
+            color: white;
+            width:500px;
+            height: 200px;
+            border: 2px solid white;
+            margin-left:100px;
+            margin-right: 20px;
+            padding:10px;
+            font-size: 17px;
+            margin-top: 100px;
+            padding-top: 50px;
+            word-spacing: 1px;
+        }
+        .sthird:hover{
+            border-color:aqua;
+            transform: scale(1.1);
+            transition: 0.25s;
+            background-color: rgba(120, 221, 26, 0.041);
+            border-radius: 10px;
+        }
+        .thirdpage{
+            background-color: #03111c;
+            width: 100vw;
+           box-sizing: border-box;
+        }
+        .header{
+           color:#ff640a;
+           font-size: 40px;
+           text-align: center;
+           padding: 5%;
+           box-sizing: border-box;
+           /* font-weight: bold; */
+        }
+        .im{
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+        .img1{
+            width: 25%;
+            border-color: white;
+            height: 60vh;
+        }
+        .thead{
+           text-align: center;
+           color:#ff640a;
+           margin-top: 30px;
+           font-size: 30px;
+        }
+        .tmatter{
+           color:white;
+           padding: 5%;
+           margin-top: 40px;
+           word-spacing: 1px;
+           font-size: 20px;
+           /* letter-spacing: 1px; */
+        }
+        .m1:hover{
+              background-image: url(m1.jpg);
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              transform: scale(1.06);
+              border-color: aqua;
+              transition: 1.8s;
+              border-radius: 3%; 
+              cursor: pointer;  
+        }
+        .m2:hover{
+              background-image: url(m2.jpg);
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              transform: scale(1.06);
+              border-color: aqua;
+              transition: 1.8s;
+              border-radius: 20px; 
+              cursor: pointer;     
+
+        }  
+        .m3:hover{
+              background-image: url(m3.jpg);
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              transform: scale(1.06);
+              border-color: aqua;
+              transition: 1.8s;
+              border-radius: 20px;      
+              cursor: pointer;
+
+        } 
+        .m4:hover{
+              background-image: url(m4.jpg);
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              transform: scale(1.06);
+              border-color: aqua;
+              transition: 1.8s;
+              border-radius: 20px;
+              cursor: pointer;
+
+        }
+        #pdabba{
+            width:100vw;
+            background-color: #03111c;
+        }
+        #cdabba1{
+            text-align: center;
+            font-size: 40px;
+            padding:3% 10%;
+            color:#ff640a;
+        }
+        #cdabba2{
+            display:flex;
+        }
+        #cdabba3{
+            display: flex;
+
+        }
+        #cdabba4{
+            display: flex;
+        }
+        #cdabba5{
+            display: flex;
+        }
+        #cdabba6{
+            display: flex;
+        }
+
+        .para{
+            width:60%;
+            text-align: justify;
+        }
+        .ima{
+            width:40%;
+            padding:5%;
+        }
+        .imag{
+            border-radius: 30px;
+            width:100%;
+            height:100%;
+            border: 2px solid #ff640a;
+        }
+        .heading{
+            font-size: 40px;
+            text-align: center;
+            color:#ff640a;
+            /* font-weight: bold; */
+        }
+        .matter{
+            font-size: 20px;
+            margin-top: 3%;
+            color: white;
+            margin-top: 50px;
+
+        }
+        .paral{
+            padding:5% 0% 5% 5%;
+    
+        }
+        .parar{
+            padding:5% 5% 5% 0%;
+    
+        }
+        .imag:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+            cursor: pointer;
+            opacity: 0.7;
+            border: 2px solid aqua;
+        }
+        #fourthpage{
+            background-color: #03111c;
+            box-sizing: border-box;
+            width: 100vw;
+            height: 350vh;
+            padding: 5%;
+        }
+        #map{
+            width: 100vw;
+        }
+        .f1{
+            width: 100%;
+            font-size: 40px;
+            color: #ff640a;
+            text-align: center;
+        }
+        .f2{
+            font-size: 40px;
+            text-align: center;
+            margin-top: 140px;
+            color: aqua;
+        }
+        .f3{
+            width: 20%;
+            height: 250px;
+            margin-left: 40%;
+            border-radius: 50%;
+            border:2px solid #ff640a ;
+            background-image: url(secondone.jpg); 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 50px;
+        }
+        .f4{
+            text-align: center;
+            word-spacing: 2px;
+            /* letter-spacing: 1px; */
+            font-size: 20px;
+            margin-top: 50px;
+            color:white;
+        }
+        .f5{
+            width: 20%;
+            height: 250px;
+            margin-left: 40%;
+            border-radius: 50%;
+            border:2px solid #ff640a ;
+            background-image: url(ind.jpg); 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 50px;
+        }
+        .f8{
+            width: 20%;
+            height: 250px;
+            margin-left: 40%;
+            border-radius: 50%;
+            border:2px solid #ff640a ;
+            background-image: url(m3.jpg); 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 50px;  
+            transition: 0.7s;
+        }
+        .f3:hover{
+           transform: scale(1.1);
+           cursor: pointer;
+           transition: 0.7s;
+           border: 2px solid aqua;
+        }
+        .f5:hover{
+           transform: scale(1.1);
+           cursor: pointer;
+           transition: 0.7s;
+           border: 2px solid aqua;
+        }
+        .f8:hover{
+           transform: scale(1.1);
+           cursor: pointer;
+           transition: 0.7s;
+           border: 2px solid aqua;
+        }
+        .page6{
+            width:100vw;
+            height: 80vh;
+        }
+        #map{
+            width:100vw;
+            height: 80vh;
+            margin-right: 100px;
+       }
+       #h6{
+        background-color:#1350a060;
+        height: 150px;
+       }
+        
+       .address{
+        display: flex;
+        width: 100vw;
+        height: 25vh;
+        background-color:#373A3C;
+        color:white;
+       }
+       #a1{
+        margin-left: 80px;
+        font-size: 30px;
+        margin-top: 35px;
+        font-weight: bold;
+       }
+       #a2{
+        margin-left: 250px;
+        font-weight: bold;
+        margin-top: 20px;
+       }
+       #loca{
+        margin-left: 250px;
+        margin-top: 50px;
+        font-weight: bold;
+        margin-top: 20px;
+       }
+       #a3{
+        margin-left: 100px;
+        font-weight: bold;
+        margin-top: 20px;
+       }
+       #gmail{
+        margin-top: 20px;
+        margin-left: 100px;
+        font-weight: bold;
+       }
+       #us{
+        margin-left: 50px;
+        font-weight: bold;
+        margin-top: 20px;
+       }
+       @media (max-width: 768px) {
+           .navbar-menu {
+             display: none;
+             flex-direction: column;
+             background-color:black;
+             position: absolute;
+             top:100%;
+             left: 40%;
+             width: 55%;
+             /* padding: 10px; */
+           }
+           .navbar{
+            background-color: black;
+           }
+           .navbar-menu li {
+             margin-right: 0;
+             margin-bottom: 10px;
+           }
+        
+           .navbar-menu li:last-child {
+             margin-bottom: 0;
+           }
+           
+           .navbar-menu li a {
+             color: #fff;
+             text-decoration: none;
+           }
+           
+           .navbar-icon .icon-bar{
+             background-color: #fff;
+             transition: transform 0.3s;
+           }
+           .navbar-icon .icon-bar {
+           display: flex;
+           width: 20px;
+           height: 2px;
+           background-color: #fff;
+           margin-bottom: 4px;
+          }
+           .expanded .icon-bar:nth-child(1) {
+             transform: rotate(45deg) translate(3px, 5px);
+           }
+           .expanded .icon-bar:nth-child(2) {
+             opacity: 0;
+           }
+           .expanded .icon-bar:nth-child(3) {
+             transform: rotate(-45deg) translate(3px, -5px);
+           }
+
+           .expanded ~ #navbar-menu {
+             display: flex;
+           }
+           .logo{
+             font-size: 25px;
+             color: white;
+             margin-bottom: 2px;
+           }
+         }
+         @media screen and (max-width: 768px) {
+    .seconddiv {
+        flex-direction: row;
+        align-items: flex-start;
+        display: block;
+    }
+
+    .paragraph {
+        flex-basis: 50%;
+        text-align: left;
+    }
+
+    .images {
+        flex-basis: 50%;
+        text-align: right;
+        margin-top: 0;
+    }
+    .gis{
+        height: 150px;
+        width:150px;
+        align-items: center;
+        margin-top: 50px;
+    }
+    #button1{
+        margin-left: 30px;
+    }
+    @media screen and (max-width: 768px) {
+        /* .container {
+          /* padding: 10px; */
+        } */
+      
+        .sfirst p {
+          font-size: 40px;
+        }
+      
+        .ssecond p {
+          font-size: 16px;
+        }
+        #num1{
+            margin-left: 70px;
+            font-weight: bold;
+            font-family: arial;
+        }
+        .sthird p {
+          font-size: 14px;
+        }
+        .ssecond{
+            display :block;
+
+        }
+        #sthird{
+            display: block;
+        }
+        .sthird{
+            height:250px;
+            width: auto;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-size: 18px;
+            /* margin-bottom: 10px; */
+        }
+        @media (max-width: 768px) {
+
+            .header p {
+              font-size: 40px;
+              margin-top: 40px;
+            }
+          
+            .img1 {
+              margin: 10px;
+              height: 320px;
+              width:300px;
+              margin-left: 55px;
+            }
+          
+            .thead {
+              font-size: 26px;
+              margin-left: 5px;
+            }
+        
+            .tmatter {
+              font-size: 18px;
+              margin-left:25px;
+            }
+            .im{
+              display: block;
+            }
+            .thirdpage{
+                height: 200vh;
+            }
+          }
+          @media (max-width: 768px) {
+              .container {
+                /* padding: 10px; */
+                margin: 0;
+                padding: 0;
+              }
+            #pdabba{
+                margin-top: 0;
+            }
+              #cdabba1 p {
+                font-size: 40px;
+              }
+              #cdabba2,#cdabba3,#cdabba4,#cdabba5,#cdabba6{
+                display: block;
+                width:400px;
+              }
+            
+              .heading {
+                font-size: 26px;
+              }
+            
+              .matter{
+                font-size: 18px;
+    
+              }
+              
+              .ima {
+                margin-left: 110px;
+                height: 120px;
+                width: 150px;
+              }
+              .parar{
+                margin-left: 45px;
+                margin-right: 45px;
+              }
+              .paral{
+                margin-left: 26px;
+                margin-right: 10px;
+              }
+              .para{
+                width:300px;
+              }
+            }
+            .f3,.f5,.f8{
+                height: 200px;
+                width:200px;
+                margin-left: 70px;
+            }
+            #fourthpage{
+                /* height: 400vh; */
+            }
+            .f2{
+                margin-top: 50px;
+            }
+            .f4{
+                font-size: 18px;
+            }
+            #map {
+                width: 100vw;
+                height: 50vh;
+            }
+
+            #h6 {
+                height: 10vh;
+            }
+
+            .page6 {
+                height: 51vh;
+            }
+
+            .address {
+                height: 40vh;
+                width: 100vw;
+                display: block;
+                margin-top: 0px;
+            }
+            #a1 {
+                font-size: 30px;
+                margin-top: 3vh;
+            }
+            #a2,
+            #loca,
+            #a3,
+            #gmail,
+            #us {
+                margin-left: 5vw;
+                margin-top: 2vh;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="logo" >
+            <h1>INdgeos</h1>
+        </div>
+        <div class="navbar-icon" id="navbar-toggle">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </div>
+        <ul class="navbar-menu" id="navbar-menu">
+          <li><a href="#hom">HOME</a></li>
+          <li><a href="#ser">SERVICES</a></li>
+          <li><a href="#sec">SECTORS</a></li>
+          <li><a href="#abc">ABOUT US</a></li>
+          <li><a href="#cont">CONTACT US</a></li>
+        </ul>
+      </nav>
+        <div class="seconddiv" >
+            <div class="paragraph"id="hom">
+                <p id="Indgeos">Indgeos Geospatial technologies</p>
+                <p id="sentance">An up-and-coming premier provider of GIS mapping services and solutions in India.</p>
+                <button id="button1" ><a href="#bu">Visit Us to know More</a></button>
+            </div>      
+            <div class="images">
+                 <img src="m1.jpg" class="gis" >
+            </div>
+
+        </div>
+    <div class="secondpage" id="bu">
+        <div class="sfirst">
+            <p> HIGHLIGHTS OF OUR COMPANY</p><br><hr>
+        </div>
+        <div class="ssecond">
+           <p id="h1">35+ Years Experience  </p>
+              <div class="num">
+                   <p id="num1">1</p>
+              </div>
+           <p id="h1">World Class Services</p>
+              <div class="num">
+                   <p id="num1">2</p>
+              </div>
+           <p id="h1">Connecting the World Geospatially</p>
+              <div class="num">
+                    <p id="num1">3</p>
+              </div> 
+        </div>
+        <div id="sthird">
+            <p class="sthird">A fresh and innovative organization, IndGeos has a team of GIS professionals and Remote Sensing experts with over 35+ years of cumulative experience, passionately working towards reforming the tech landscape in India.</p>
+            <p class="sthird">We offer a complete range of Geospatial solutions and services under a single roof – from web to mobile applications, custom development, sector-specific innovations, and more.</p>
+            <p class="sthird">We strongly believe in the immense potential of Geospatial technologies for empowering decision-makers, implementers, and end-users through cutting-edge, cross-sectoral applications. Our aim at IndGeos is to advance India’s path to economic growth with the help of Geospatial technologies.</p>
+        </div>
+    </div>
+    <div class="thirdpage">
+        <div class="header" >
+            <p id="ser">SERVICES</p><br><hr>
+        </div>
+        <div class="im">
+            <div class="img1 m1">
+                <p class="thead">GIS Services</p> 
+                <p class="tmatter">Our forefront knowledge of data mapping, feature extraction / compilation, information management, and integrating verticals with GIS expertise helps build application-centric solutions for various sectors.</p>
+            </div>
+            <div class="img1 m2">
+                <p class="thead">Remote Sensing</p>
+                <P class="tmatter">With in-house experts in Remote sensing, image interpretation and Classification, you can rely on us to implement innovative techniques to get precise land cover classifications for a variety of applications.</P>
+            </div>
+            <div class="img1 m3">
+                   <p class="thead">GIS Data Management</p>
+                   <p class="tmatter">Our results-driven culture follows a ‘data-first’ policy, helping identify and assess key data sources specific to project, and assist in data Collection, processing, creating, modeling, cleaning and validating, and data migration services</p>
+            </div>
+            <div class="img1 m4">
+                 <p class="thead">Customized GIS Solutions</p>
+                 <p class="tmatter">We offer customized GIS solutions for desktops, web, cloud, and mobile applications along with seamless integration across platforms and verticals to build revolutionary solutions varying from one use case to another, as you go.</p>
+            </div>
+        </div>
+    </div>
+    <div id="pdabba">
+        <div id="cdabba1">
+            <p id="sec">SECTORS</p> <br><hr>
+        </div>
+        <div id="cdabba2">
+            <div class="para paral">
+                <p class="heading">
+                    AGRICULTURE <br>
+                </p>
+                <p class="matter">
+                    Indgeos geospatial solutions help governments and agricultural organizations build accurate 2D maps and 3D models of agricultural lands based on precise data gathering and mapping of farm topography and shape, water catchment regions, soil type, crop quality estimation, prospective production zones, crop damage extent and cause, and other factors. Our in-house expertise and solutions help monitor land resources faster and more accurately, no matter how difficult or remote the terrain for precision agriculture. They can better examine agricultural surroundings, land resources, and workflows visually and determine which crops should be put where and how to get the most profit while preserving the soil's fertility.
+                </p>    
+            </div>
+            <div class="ima">
+                <img src="agriculture.jpg" alt="No image" class="imag">
+            </div>    
+        </div>
+        <div id="cdabba3">
+            <div class="ima">
+                <img src="business.jpg" alt="No image" class="imag">
+            </div> 
+            <div class="para parar">
+                <p class="heading">
+                    BUSINESS INTELLIGENCE <br>
+                </p>
+                <p class="matter">
+                    For organisations, it is more crucial than ever to map, visualise, and interpret data from a geographic perspective. Indgeos helps them combine geospatial intelligence with AI workflows to forecast consumer behaviour, target marketing campaigns based on their current and past locations, and plan routing based on real-time route circumstances to plan the most effective path for deliveries. Indgeos is also helping combine geospatial solutions with other cutting-edge technologies, spatial analysis, crowdsourcing, and social media to develop accurate models and results.
+                </p>    
+            </div>
+        </div>
+        <div id="cdabba4">
+            <div class="para paral">
+                <p class="heading">
+                    DISASTER MANAGEMENT<br>
+                </p>
+                <p class="matter">
+                    With the customizable GIS and remote sensing solutions at Indgeos, it is possible to collect information on flood inundations, storm surges, topography changes, and more. The processes of infrastructure restoration, recovery, and reconstruction can benefit from the most recent elevation data of locations obtained through Indgeos’s comprehensive data collection and management processes. Our clients can significantly shorten the time it takes to respond to a disaster through a thorough assessment of the affected areas, real-time monitoring of support levels and supplies, updated databases of people, businesses, structures, and utilities, location of accessible evacuation routes, and collaboration with emergency response teams using geospatial services and solutions at Indgeos.
+                </p>    
+            </div>
+            <div class="ima">
+                <img src="disaster.jpg" alt="No image" class="imag">
+            </div>    
+        </div>
+        <div id="cdabba5">
+            <div class="ima">
+                <img src="infra1.jpg" alt="No image" class="imag">
+            </div> 
+            <div class="para parar">
+                <p class="heading">
+                   INFRASTRUCTURE <br>
+                </p>
+                <p class="matter">
+                    Sound infrastructure development must consider all of its phases and their constituent parts in relation to one another in order to plan, construct, and manage infrastructure efficiently. This is made possible by the infrastructure's digitalization, which makes it possible for entire projects to operate as interconnected systems. Indgeos is helping governments and private sector partners conduct this crucial digitization process on the pillars of geospatial technologies. We capture, process, and manage geospatial data essential for processing and visualising project updates in real-time, as well as for instantly connecting and exchanging data between teams, whether they are on-site or distant. Through the in-house geospatial solutions at Indgeos, our customers can integrate several interconnected infrastructure components on digital portals to understand where each component of infrastructure is located, where the vital dependencies are, and where difficulties may or may not exist.
+                </p>    
+            </div>
+        </div>
+        <div id="cdabba6">
+            <div class="para paral">
+                <p class="heading">
+                    TELECOM<br>
+                </p>
+                <p class="matter">
+                    In order to stay competitive, telecommunications providers need a solid workflow process that incorporates data for marketing, demand forecasting, engineering, customer management, operations support, and fleet management. The geospatial solutions and services at Indgeos enable faster data sharing between businesses, system interoperability, and business process automation to increase operational efficiency for this purpose.
+            </div>
+            <div class="ima">
+                <img src="telecom.jpg" alt="No image" class="imag">
+            </div>    
+        </div>
+    </div>
+    <div id="fourthpage">
+        <div class="f1">
+            <p id="abc">ABOUT INDGEOS GEOSPATIAL TECHNOLOGIES</p><br><hr>
+        </div>
+        <div class="f2">
+            <p>Who we are?</p> 
+        </div>
+        <div class="f3">
+        </div>
+        <div class="f4">
+            <p>IndGeos is on its way to establish itself as a leading provider of Geospatial services and solutions for different user communities in India on the same lines. Founded in 2018, IndGeos Geospatial Services has had a successful journey in terms of rendering a variety of GIS and Remote Sensing projects through affordable solutions for a wide range of public and private users.</p>
+        </div>
+        <div class="f2">
+            <p>What we Do?</p>
+        </div>
+        <div class="f5">
+        </div>
+        <div class="f4">
+           <p>At IndGeos, our USP lies in the special combination of experience, vision, innovative thinking, and cost effectiveness in one. We aspire to be among the top GIS companies in India, making our mark in the Geospatial industry through pioneering services and solutions. We specialize in tackling the most common and pressing spatial challenges with advanced location intelligence, extracting useful insights from data at hand, and building groundbreaking solutions on the pillars of sound research and technological advancements from our _ cumulative years of experience working in the industry. IndGeos also believes in progressing hand-in-hand with advanced technologies like Big Data analytics, Artificial Intelligence, Machine Learning algorithms, and Remote Sensing technology to anchor as a crucial foundation on which to build wide-ranging, sector-specific application-centric solutions for solving the world’s challenges.</p>
+        </div>
+        <div class="f2">
+            <p>Why Indgeos?</p>
+        </div>
+        <div class="f8">
+
+        </div>
+        <div class="f4">
+            <p>With over 30+ years of combined expertise, the GIS and Remote Sensing experts on the IndGeos team are energetic, passionate, and committed. We are on our way to become established pioneers in the field of Geospatial data and technologies, offering not just cutting-edge data processing and visualization services for our wide range of clients from around the world, but also game-changing applications that address governance, socioeconomic and environmental issues at the right place and time. Our results-driven culture places information at the centre of all its decisions and operations, thus benefitting our clients by giving them exactly what they are rooting for.</p>
+        </div>
+    </div>
+     <div class="page6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.5064745118275!2d77.08673869005848!3d28.49440593709625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19389303d61b%3A0x68c1c633f29c5297!2s10-A%2C%20DLF%20Cyber%20City%2C%20DLF%20Phase%202%2C%20Sector%2025%2C%20Gurugram%2C%20Haryana%20122008!5e0!3m2!1sen!2sin!4v1688455207844!5m2!1sen!2sin" width="1350vw" id='map' height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+   </div>
+   <div class="address" id="cont" >
+       <p id="a1">INdgeos</p>
+      <div class="loc" id="con">
+       <p id="a2">LOCATION </p>
+       <p id="loca">Level 1 Building 10-A, DLF Cyber City, Phase-II,<br> Gurgaon - 122002, Haryana</p>
+      </div>
+      <div class="email">
+       <p id="a3">MORE INFO</p>
+       <p id="gmail">Email: admin@indgeos.in</p>
+      </div>
+      <div class="social" id="con">
+       <p id="us">GET SOCIAL WITH US</p>
+      </div>
+  </div>
+  <script>
+    document.getElementById('navbar-toggle').addEventListener('click', function() {
+    this.classList.toggle('expanded');
+});
+
+</script>
+</body>
+</html>
